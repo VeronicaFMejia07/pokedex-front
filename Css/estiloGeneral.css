@@ -1,0 +1,350 @@
+/*---ESTILO PARA MOBILE 320PX---*/
+/*Formateo de los estilos del navegador*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Definición de variables*/
+:root {
+    --colorHeader: #e00000;
+    --colorMain: #7A819B;
+    --tipo__nombre: #e6b31b;
+    --descripcion: #fcfcff;
+    --colorFooter: #ff5830;
+    --colorCaracteristicas: rgba(47, 149, 160);
+    --tipoLetra: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/*Header*/
+.contenedor__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: var(--colorHeader);
+}
+
+/*Contenedor del icono*/
+.header__figure-tipo {
+    display: flex;
+    align-items: center;
+    width: 20%;
+    padding: .5rem;
+}
+
+/*Icono del header*/
+.figure__img__pokeball-pokedex{
+    width: 100%;
+}
+
+/*Titulo del header*/
+.div__titulo-pokedex {
+    font-size: 2rem;
+    font-family: var(--tipoLetra);
+}
+
+/*Main*/
+.contenedor__main {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--colorMain);
+}
+
+/*Contenedor con informacion principal del pokedex*/
+.main__figure__titulo-pokedex {
+    width: 100%;
+    height: 70vh;
+    padding: 1.3rem 2rem;
+    margin-right: auto;
+    margin-left: auto;
+    font-family: var(--tipoLetra);
+}
+
+/*Contenedor para el tipo y nombre del pokedex*/
+.section__tipo__nombre-pokedex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+    background-color: var(--tipo__nombre);
+    padding: .5rem 2rem;
+    border-radius: 1rem;
+}
+
+/*Contenedor de la imagen del tipo de pokedex*/
+.figure__tipo-pokedex {
+    width: 13%;
+    margin-right: .5rem;
+}
+
+/*Imagen del tipo de pokedex*/
+.figure__img__tipo-pokedex {
+    height: 100%;
+    width: 100%;
+}
+
+/*Nombre del pokedex*/
+.article__titulo-pokedex {
+    font-family: var(--tipoLetra);
+    font-size: 1.5rem;
+}
+
+/*Contenedor de la imagen del pokedex*/
+.section__figure__imagen-pokedex {
+    width: 100%;
+    margin: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Imagen del pokedex*/
+.figure__img__pokemon-pokedex {
+    width: 100%;
+}
+
+/*Contenedor para la información del pokedex*/
+.main__section__descripcion-pokedex {
+    width: 80%;
+    height: 52%;
+    margin-top: -140px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--descripcion);
+    border-radius: 1rem;
+    padding: 2rem;
+}
+
+/*Contenedor con las caracteristicas detalladas del pokedex*/
+.article__titulo__parrafo__pokedex {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin: 1rem;  
+}
+
+/*Titulos de las descripciones*/
+.article__descripcion__titulo-pokedex {
+    width: 70%;
+    font-family: var(--tipoLetra);
+    font-weight: normal;
+}
+
+/*Detalles de la descripcion*/
+.article__descripcion__parrafo-pokedex {
+    width: 30%;
+    font-family: var(--tipoLetra);
+    
+}
+
+/*Contenedor footer*/
+.contenedor__footer {
+    width: 100%;
+    height: 50vh;
+    background-color: var(--colorFooter);
+}
+
+/*Contenedor de otros pokedex, titulo OTHERS*/
+.article__titulo__otros-pokedex {
+    text-align: center;
+    padding: .5rem;
+    font-weight: normal;
+    font-size: 1.5rem;
+    font-family: var(--tipoLetra);
+}
+
+/*Contenedor para las imagenes de otros pokedex*/
+.footer__section__figure-pokedex {
+    width: 100%;
+}
+
+/*Contenedor para las imagenes del footer*/
+.figure__imagen__otro-pokedex {
+    display: flex;
+    justify-content: center;
+}
+
+/*Imagenes de los otros pokedex*/
+.figure__img__otros-pokedex{
+    width: 20%;
+    background-color: var(--descripcion);
+    border-radius: 1rem;
+    display: flex;
+    margin: .5rem 1.5rem;
+}
+
+/*Efecto de que son cliqueables las imagenes de otros pokedex*/
+.figure__img__otros-pokedex:hover {
+    background-color: var(--tipo__nombre);
+    cursor: pointer;
+}
+
+/*---ESTILO PARA MOBILE 375PX---*/
+@media screen and (min-width: 375px) {
+    .contenedor__main {
+        height: 108vh;
+    }
+
+    .main__section__descripcion-pokedex {
+        height: 47%;
+        margin-top: -85px;
+    }
+
+    .contenedor__footer {
+        height: 55vh;
+    }
+}
+
+/*---ESTILO PARA MOBILE 425PX---*/
+@media screen and (min-width: 425px) {
+    .figure__tipo-pokedex {
+        width: 11%;
+    }
+
+    .contenedor__main {
+        height: 115vh;
+    }
+
+    .main__section__descripcion-pokedex {
+        height: 45%;
+        margin-top: -55px;
+    }
+
+    .contenedor__footer {
+        height: 60vh;
+    }
+}
+
+/*---ESTILO PARA TABLET 768PX---*/
+@media screen and (min-width: 768px) {
+    .contenedor__header {
+        justify-content: flex-start;
+        height: 15vh;
+    }
+
+    .header__figure-tipo {
+        width: 12%;
+    }
+
+    .figure__img__pokeball-pokedex {
+        width: 100%;
+    }
+
+    .contenedor__main {
+        display: flex;
+        height: 80vh;
+    }
+
+    .main__figure__titulo-pokedex {
+        width: 60%;
+        margin: 0rem;
+    }
+
+    .section__tipo__nombre-pokedex {
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+    }
+
+    .figure__tipo-pokedex {
+        width: 9%;
+    }
+
+    .section__figure__imagen-pokedex {
+        width: 90%;
+    }
+
+    .main__section__descripcion-pokedex {
+        padding: 0rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 36%;
+        height: 89%;
+        margin-top: 1.5rem;
+        margin-left: -20px;
+    }
+
+    .article__titulo__parrafo__pokedex {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        margin: 0rem;
+        padding: 0rem;
+        text-align: center;
+    }
+
+    .article__descripcion__titulo-pokedex {
+        width: 100%;
+    }
+
+    .article__descripcion__parrafo-pokedex {
+        width: 100%;
+        font-size: 1.5rem;
+    }
+
+    .contenedor__footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 20vh;
+    }
+    .footer__article__titulo-pokedex{
+        width: 25%; 
+    }
+  
+    .footer__section__figure-pokedex{
+        display: flex;
+        width: 70%;
+    }
+    .figure__imagen__otro-pokedex {
+        width: 70%;
+    }
+    .figure__img__otros-pokedex{
+        width: 30%;
+    }
+}
+
+/*---ESTILO PARA DESKTOP 1366PX---*/
+@media screen and (min-width: 1366px){
+    .contenedor__header{
+        width: 100%;
+    }
+   .header__figure-tipo{
+        width: 8%;
+    }
+    .contenedor__main{
+        width: 100%;
+        height: 75vh;
+    }
+    .section__tipo__nombre-pokedex{
+        width: 60%;
+    }
+    .figure__tipo-pokedex{
+        width: 6%;
+    }
+    .section__figure__imagen-pokedex{
+        width: 60%;
+    }
+    .main__section__descripcion-pokedex{
+        width: 28%;
+        margin-left: -60px;
+    }
+    .contenedor__footer{
+        width: 100%;
+        height: 25vh;
+    }
+    .footer__article__titulo-pokedex{
+        width: 20%;
+    }
+    .figure__imagen__otro-pokedex {
+        margin:.5rem;
+    }
+    .footer__section__figure-pokedex{
+        width: 55%;
+    }
+}
